@@ -19,7 +19,7 @@ body {
 .main-page {
   width: 100%;
   height: 100vh;
-  display: none;
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr min-content;
 }
@@ -210,6 +210,7 @@ body {
   background-color: #fff;
   padding: 2.5rem 0;
   box-shadow: 0 0 0.7rem rgba(0, 0, 0, 0.3);
+  z-index: 1;
 }
 
 .login-page-nav ul {
@@ -359,12 +360,47 @@ body {
   color: #8ee53f;
 }
 /* end of login  */
+
+/* login model  */
+
+.login-model {
+  position: fixed;
+  top: 11.5rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 70rem;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 0 0.7rem rgba(0, 0, 0, 0.3);
+  border-radius: 0 0 1rem 1rem;
+  display: none;
+}
+
+.login-model i {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 1.3rem;
+  color: #868383;
+  cursor: pointer;
+}
+
+.login-model p {
+  margin: 2rem 1rem 0 1rem;
+  font-size: 1.6rem;
+  color: #868383;
+}
+
+/* end of login model  */
+
 /* end of login page  */
 
 /* feed page  */
 .feed-page {
   width: 100%;
   height: 100vh;
+  display: none;
 }
 
 /* feed nav  */
