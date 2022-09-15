@@ -4,8 +4,8 @@ const loginPage = document.querySelector(".login-page");
 const middleContent = document.querySelector(".middle-content");
 const btnTop = document.querySelector(".btn-top");
 const newsFeedPage = document.querySelector(".feed-page");
-const loginModel = document.querySelector(".login-model");
-const modelX = document.querySelector(".login-model i");
+const loginmodal = document.querySelector(".login-modal");
+const modalX = document.querySelector(".login-modal i");
 const loginFormBtn = document.querySelector(".login-form-btn");
 const postBtn = document.querySelector(".post-btn");
 const modalWrapper = document.querySelector(".modal-wrapper");
@@ -39,13 +39,13 @@ btnTop.addEventListener("click", () => {
     newsFeedPage.style.display = "block";
   } else {
     goToLoginPage();
-    loginModel.style.display = "block";
+    loginmodal.style.display = "block";
   }
 });
 
 // Login Page
-modelX.addEventListener("click", () => {
-  loginModel.style.display = "none";
+modalX.addEventListener("click", () => {
+  loginmodal.style.display = "none";
 });
 
 loginFormBtn.addEventListener("click", () => {
@@ -56,7 +56,7 @@ loginFormBtn.addEventListener("click", () => {
     loginPage.style.display = "none";
     newsFeedPage.style.display = "block";
   } else {
-    loginModel.style.display = "block";
+    loginmodal.style.display = "block";
   }
 });
 

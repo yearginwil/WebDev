@@ -361,9 +361,9 @@ body {
 }
 /* end of login  */
 
-/* login model  */
+/* login modal  */
 
-.login-model {
+.login-modal {
   position: fixed;
   top: 11.5rem;
   left: 50%;
@@ -377,7 +377,7 @@ body {
   display: none;
 }
 
-.login-model i {
+.login-modal i {
   position: absolute;
   top: 2rem;
   right: 2rem;
@@ -386,13 +386,13 @@ body {
   cursor: pointer;
 }
 
-.login-model p {
+.login-modal p {
   margin: 2rem 1rem 0 1rem;
   font-size: 1.6rem;
   color: #868383;
 }
 
-/* end of login model  */
+/* end of login modal  */
 
 /* end of login page  */
 
